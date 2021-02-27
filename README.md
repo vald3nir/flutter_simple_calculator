@@ -1,2 +1,6 @@
-# flutter-simple-calculator
-Simple calculator made in Flutter
+ Simple Calculator
+
+A Flutter Demo Project
+
+## Overview
+
