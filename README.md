@@ -1,4 +1,4 @@
- Simple Calculator
+# Simple Calculator
 
 A Flutter Demo Project
 
