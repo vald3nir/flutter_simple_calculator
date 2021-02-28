@@ -1,15 +1,41 @@
+import 'package:calculator/modules/calculator/calculator_views.dart';
 import 'package:flutter/material.dart';
 
 class AndroidApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "IMC",
-      debugShowCheckedModeBanner: false,
+      title: 'Calculator',
       theme: ThemeData(
-        primarySwatch: Colors.pink,
+        primarySwatch: Colors.red,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      // home: HomePage(),
+      debugShowCheckedModeBanner: false,
+      home: MyHomePage(title: 'Calculator'),
+    );
+  }
+}
+
+class MyHomePage extends StatelessWidget {
+  MyHomePage({this.title});
+
+  final String title;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(this.title),
+      ),
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Container(
+            child: Column(
+              children: <Widget>[Visor(), KeyboardAndroid()],
+            ),
+          ),
+        ),
+      ),
     );
   }
 }

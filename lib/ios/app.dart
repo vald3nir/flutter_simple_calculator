@@ -1,12 +1,41 @@
-import 'package:flutter/cupertino.dart';
+import 'package:calculator/modules/calculator/calculator_views.dart';
+import 'package:flutter/material.dart';
 
 class IOSApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return CupertinoApp(
-      title: "IMC",
+    return MaterialApp(
+      title: 'Calculator',
+      theme: ThemeData(
+        primarySwatch: Colors.red,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
       debugShowCheckedModeBanner: false,
-      // home: HomePage(),
+      home: MyHomePage(title: 'Calculator'),
+    );
+  }
+}
+
+class MyHomePage extends StatelessWidget {
+  MyHomePage({this.title});
+
+  final String title;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(this.title),
+      ),
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Container(
+            child: Column(
+              children: <Widget>[Visor(), KeyboardIOS()],
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
