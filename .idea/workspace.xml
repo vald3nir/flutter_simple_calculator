@@ -5,32 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2910638-d545-42e7-9c04-5dbba4ae5e0e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/modules/calculator/calculator_views.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/098d3ee73e6cc294616d3a2e2c3c81ad/asset_graph.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/build/098d3ee73e6cc294616d3a2e2c3c81ad/asset_graph.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/calculator/lib/controllers/calculator_controller.store_generator.g.part" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/cf4eb0ad8b95f86c05d39446f2d74eb1/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/cf4eb0ad8b95f86c05d39446f2d74eb1/.filecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/cf4eb0ad8b95f86c05d39446f2d74eb1/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/cf4eb0ad8b95f86c05d39446f2d74eb1/app.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/cf4eb0ad8b95f86c05d39446f2d74eb1/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/cf4eb0ad8b95f86c05d39446f2d74eb1/kernel_snapshot.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/cf4eb0ad8b95f86c05d39446f2d74eb1/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/cf4eb0ad8b95f86c05d39446f2d74eb1/kernel_snapshot.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/4f2a58af27abc49ecf55570043bbf938.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/4f2a58af27abc49ecf55570043bbf938.cache.dill.track.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_build.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_build.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/out/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/out/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/apk/debug/app-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk.sha1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/android/app.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/android/app.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/android/pages/home.page.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/buttons.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/modules/components/buttons.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/texts.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/modules/components/texts.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/controllers/calculator_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/modules/calculator/calculator_controller.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/controllers/calculator_controller.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/modules/calculator/calculator_controller.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ios/app.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ios/app.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ios/pages/home.page.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_simple_calculator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter-simple-calculator.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614520561162</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="split project [android/ios]">
+      <created>1614522007710</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1614522007710</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -123,41 +106,42 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="add mobx dependence" />
     <MESSAGE value="update project to use mobX" />
-    <option name="LAST_COMMIT_MESSAGE" value="update project to use mobX" />
+    <MESSAGE value="split project [android/ios]" />
+    <option name="LAST_COMMIT_MESSAGE" value="split project [android/ios]" />
   </component>
   <component name="WindowStateProjectService">
     <state x="489" y="119" width="387" height="495" key="AndroidProcessChooserDialog" timestamp="1614519455565">
       <screen x="0" y="0" width="1366" height="741" />
     </state>
     <state x="489" y="119" width="387" height="495" key="AndroidProcessChooserDialog/0.0.1366.741@0.0.1366.741" timestamp="1614519455565" />
-    <state x="207" y="0" width="941" height="735" key="CommitChangelistDialog2" timestamp="1614520553208">
+    <state x="207" y="0" width="941" height="735" key="CommitChangelistDialog2" timestamp="1614521999619">
       <screen x="0" y="0" width="1366" height="741" />
     </state>
-    <state x="207" y="0" width="941" height="735" key="CommitChangelistDialog2/0.0.1366.741@0.0.1366.741" timestamp="1614520553208" />
+    <state x="207" y="0" width="941" height="735" key="CommitChangelistDialog2/0.0.1366.741@0.0.1366.741" timestamp="1614521999619" />
     <state x="466" y="128" width="424" height="478" key="FileChooserDialogImpl" timestamp="1614428619042">
       <screen x="0" y="0" width="1366" height="741" />
     </state>
     <state x="466" y="128" width="424" height="478" key="FileChooserDialogImpl/0.0.1366.741@0.0.1366.741" timestamp="1614428619042" />
-    <state width="1324" height="342" key="GridCell.Tab.0.bottom" timestamp="1614521969589">
+    <state width="1324" height="369" key="GridCell.Tab.0.bottom" timestamp="1614522256480">
       <screen x="0" y="0" width="1366" height="741" />
     </state>
-    <state width="1324" height="342" key="GridCell.Tab.0.bottom/0.0.1366.741@0.0.1366.741" timestamp="1614521969589" />
-    <state width="1324" height="342" key="GridCell.Tab.0.center" timestamp="1614521969589">
+    <state width="1324" height="369" key="GridCell.Tab.0.bottom/0.0.1366.741@0.0.1366.741" timestamp="1614522256480" />
+    <state width="1324" height="369" key="GridCell.Tab.0.center" timestamp="1614522256480">
       <screen x="0" y="0" width="1366" height="741" />
     </state>
-    <state width="1324" height="342" key="GridCell.Tab.0.center/0.0.1366.741@0.0.1366.741" timestamp="1614521969589" />
-    <state width="1324" height="342" key="GridCell.Tab.0.left" timestamp="1614521969588">
+    <state width="1324" height="369" key="GridCell.Tab.0.center/0.0.1366.741@0.0.1366.741" timestamp="1614522256480" />
+    <state width="1324" height="369" key="GridCell.Tab.0.left" timestamp="1614522256479">
       <screen x="0" y="0" width="1366" height="741" />
     </state>
-    <state width="1324" height="342" key="GridCell.Tab.0.left/0.0.1366.741@0.0.1366.741" timestamp="1614521969588" />
-    <state width="1324" height="342" key="GridCell.Tab.0.right" timestamp="1614521969589">
+    <state width="1324" height="369" key="GridCell.Tab.0.left/0.0.1366.741@0.0.1366.741" timestamp="1614522256479" />
+    <state width="1324" height="369" key="GridCell.Tab.0.right" timestamp="1614522256480">
       <screen x="0" y="0" width="1366" height="741" />
     </state>
-    <state width="1324" height="342" key="GridCell.Tab.0.right/0.0.1366.741@0.0.1366.741" timestamp="1614521969589" />
-    <state x="278" y="93" width="800" height="548" key="Vcs.Push.Dialog.v2" timestamp="1614507821394">
+    <state width="1324" height="369" key="GridCell.Tab.0.right/0.0.1366.741@0.0.1366.741" timestamp="1614522256480" />
+    <state x="278" y="93" width="800" height="548" key="Vcs.Push.Dialog.v2" timestamp="1614522030958">
       <screen x="0" y="0" width="1366" height="741" />
     </state>
-    <state x="278" y="93" width="800" height="548" key="Vcs.Push.Dialog.v2/0.0.1366.741@0.0.1366.741" timestamp="1614507821394" />
+    <state x="278" y="93" width="800" height="548" key="Vcs.Push.Dialog.v2/0.0.1366.741@0.0.1366.741" timestamp="1614522030958" />
     <state x="481" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1614429331815">
       <screen x="0" y="0" width="1366" height="741" />
     </state>
