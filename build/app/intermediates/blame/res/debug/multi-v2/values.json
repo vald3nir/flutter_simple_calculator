@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/vald3nir/Documentos/Projetos/Flutter/flutter-simple-calculator/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/home/vald3nir/Documentos/Projetos/Flutter/flutter_simple_calculator/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "/home/vald3nir/Documentos/Projetos/Flutter/flutter-simple-calculator/android/app/src/main/res/values/styles.xml",
+                    "source": "/home/vald3nir/Documentos/Projetos/Flutter/flutter_simple_calculator/android/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

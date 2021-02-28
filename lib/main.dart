@@ -1,6 +1,11 @@
-import 'dart:ui';
-
+import 'package:calculator/components/texts.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_mobx/flutter_mobx.dart';
+
+import 'components/buttons.dart';
+import 'controllers/calculator_controller.dart';
+
+final controller = CalculatorController();
 
 void main() {
   runApp(MyApp());
@@ -15,251 +20,84 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.red,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      debugShowCheckedModeBanner: false,
       home: MyHomePage(title: 'Calculator'),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-  final String title;
-
+class _Visor extends StatelessWidget {
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  Widget build(BuildContext context) {
+    return Container(
+      color: Colors.black,
+      alignment: Alignment.bottomRight,
+      height: 150,
+      child: Padding(
+        padding: const EdgeInsets.all(10.0),
+        child: Observer(
+          builder: (_) => LabelBig(controller.response, Colors.white),
+        ),
+      ),
+    );
+  }
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  String _firstNumber = "";
-  String _secondNumber = "";
-  int __operationSelected = -1;
-  String _operations = " ";
+// ignore: must_be_immutable
+class _Keyboard extends StatelessWidget {
+  var widgetList = [
+    ["C", Colors.red, () {
+      controller.clearOperation();
+    }    ],
+    ["0", Colors.grey, () { controller.putDigital(0) ;}    ],
+    ["1", Colors.grey, () { controller.putDigital(1); }    ],
+    ["2", Colors.grey, () { controller.putDigital(2); }    ],
+    ["3", Colors.grey, () { controller.putDigital(3); }    ],
+    ["4", Colors.grey, () { controller.putDigital(4); }    ],
+    ["5", Colors.grey, () { controller.putDigital(5); }    ],
+    ["6", Colors.grey, () { controller.putDigital(6); }    ],
+    ["7", Colors.grey, () { controller.putDigital(7); }    ],
+    ["8", Colors.grey, () { controller.putDigital(8); }    ],
+    ["9", Colors.grey, () { controller.putDigital(9); }    ],
+    ["=", Colors.red, () { controller.resolve(); }    ],
+    ["+", Colors.orange, () { controller.callPlus(); }    ],
+    ["-", Colors.orange, () { controller.callMinus(); }    ],
+    ["*", Colors.orange, () { controller.callTimes(); }    ],
+    ["/", Colors.orange, () { controller.callDivider(); }    ],
+  ];
 
-  void _clearOperation() {
-    setState(() {
-      _operations = " ";
-      _firstNumber = "";
-      _secondNumber = "";
-      __operationSelected = -1;
-    });
+  @override
+  Widget build(BuildContext context) {
+    return GridView.builder(
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 4, crossAxisSpacing: 8, mainAxisSpacing: 4),
+      padding: EdgeInsets.all(8),
+      shrinkWrap: true,
+      itemCount: widgetList.length,
+      itemBuilder: (context, index) {
+        return ButtonRounded(
+            widgetList[index][0], widgetList[index][1], widgetList[index][2]);
+      },
+    );
   }
+}
 
-  void _setOperation(int type) {
-    setState(() {
-      __operationSelected = type;
-    });
-    joinOperation();
-  }
+class MyHomePage extends StatelessWidget {
+  MyHomePage({this.title});
 
-  void joinOperation() {
-    setState(() {
-      if (__operationSelected == -1) {
-        _operations = _firstNumber;
-      } else {
-        if (_secondNumber.length > 0 && int.parse(_secondNumber) > 0) {
-          _operations = _firstNumber +
-              " " +
-              _getOperationFromId(__operationSelected) +
-              " " +
-              _secondNumber +
-              " = " +
-              _runOperation(__operationSelected).toString();
-        } else {
-          _operations =
-              _firstNumber + " " + _getOperationFromId(__operationSelected);
-        }
-      }
-    });
-  }
-
-  String _getOperationFromId(int id) {
-    switch (id) {
-      case 0:
-        return "+";
-      case 1:
-        return "-";
-      case 2:
-        return "*";
-      case 3:
-        return "/";
-      case 4:
-        return "%";
-      default:
-        return " ";
-    }
-  }
-
-  double _runOperation(int operation) {
-    switch (operation) {
-      case 0:
-        return double.parse(_firstNumber) + double.parse(_secondNumber);
-      case 1:
-        return double.parse(_firstNumber) - double.parse(_secondNumber);
-      case 2:
-        return double.parse(_firstNumber) * double.parse(_secondNumber);
-      case 3:
-        return double.parse(_firstNumber) / double.parse(_secondNumber);
-      case 4:
-        return double.parse(_firstNumber) % double.parse(_secondNumber);
-      default:
-        return 0;
-    }
-  }
-
-  void _setFirstNumber(String number) {
-    setState(() {
-      _firstNumber += number;
-    });
-    joinOperation();
-  }
-
-  void _setSecondNumber(String number) {
-    if (__operationSelected >= 0) {
-      if (number == "0" && _secondNumber.length == 0) {
-        return;
-      }
-
-      setState(() {
-        _secondNumber += number;
-      });
-      joinOperation();
-    }
-  }
+  final String title;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text(this.title),
       ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Container(
             child: Column(
-              children: <Widget>[
-                Container(
-                  alignment: Alignment.center,
-                  height: 140,
-                  child: GridView.count(
-                    scrollDirection: Axis.horizontal,
-                    crossAxisCount: 2,
-                    children: List.generate(10, (index) {
-                      return GestureDetector(
-                          onTap: () {
-                            _setFirstNumber('$index');
-                          },
-                          child: Container(
-                            color: Colors.white,
-                            child: Padding(
-                              padding: const EdgeInsets.all(10.0),
-                              child: Text('$index',
-                                  style: TextStyle(
-                                      color: Colors.black, fontSize: 24)),
-                            ),
-                          ));
-                    }),
-                  ),
-                ),
-                Container(
-                  child: Center(
-                    child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          Expanded(
-                              child: RaisedButton(
-                                  onPressed: () {
-                                    _setOperation(0);
-                                  },
-                                  child: Text("+"))),
-                          Expanded(
-                              child: RaisedButton(
-                                  onPressed: () {
-                                    _setOperation(1);
-                                  },
-                                  child: Text("-"))),
-                          Expanded(
-                              child: RaisedButton(
-                                  onPressed: () {
-                                    _setOperation(2);
-                                  },
-                                  child: Text("*"))),
-                          Expanded(
-                              child: RaisedButton(
-                                  onPressed: () {
-                                    _setOperation(3);
-                                  },
-                                  child: Text("/"))),
-                          Expanded(
-                              child: RaisedButton(
-                                  onPressed: () {
-                                    _setOperation(4);
-                                  },
-                                  child: Text("%"))),
-                        ]),
-                  ),
-                ),
-                Container(
-                  alignment: Alignment.center,
-                  height: 140,
-                  child: GridView.count(
-                    scrollDirection: Axis.horizontal,
-                    crossAxisCount: 2,
-                    children: List.generate(10, (index) {
-                      return GestureDetector(
-                          onTap: () {
-                            _setSecondNumber('$index');
-                          },
-                          child: Container(
-                            color: Colors.white,
-                            child: Padding(
-                              padding: const EdgeInsets.all(10.0),
-                              child: Text('$index',
-                                  style: TextStyle(
-                                      color: Colors.black, fontSize: 24)),
-                            ),
-                          ));
-                    }),
-                  ),
-                ),
-                Container(
-                  child: Center(
-                    child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          // Expanded(
-                          //     child: RaisedButton(
-                          //         color: Colors.blue,
-                          //         onPressed: () {
-                          //         },
-                          //         child: Text("Calcular",
-                          //             style: TextStyle(color: Colors.white)))),
-                          Expanded(
-                              child: RaisedButton(
-                                  color: Colors.blue,
-                                  onPressed: () {
-                                    _clearOperation();
-                                  },
-                                  child: Text("Zerar",
-                                      style: TextStyle(color: Colors.white))))
-                        ]),
-                  ),
-                ),
-                Column(children: <Widget>[
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: Padding(
-                        padding: const EdgeInsets.all(10.0),
-                        child: Column(
-                          children: <Widget>[
-                            Text(_operations),
-                          ],
-                        )),
-                    // child: Text(
-                    //   'Headline',
-                    //   style: TextStyle(fontSize: 22),
-                    // ),
-                  )
-                ]),
-              ],
+              children: <Widget>[_Visor(), _Keyboard()],
             ),
           ),
         ),
