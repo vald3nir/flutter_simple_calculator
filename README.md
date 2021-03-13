@@ -6,7 +6,8 @@ A Flutter Demo Project
 
 ![alt text](overview.jpeg)
 
-## Build Runner Command
+## Useful commands
 
+    flutter pub get
     flutter pub run build_runner build
 
