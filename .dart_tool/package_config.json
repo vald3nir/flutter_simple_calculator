@@ -45,7 +45,7 @@
     },
     {
       "name": "build_daemon",
-      "rootUri": "file:///home/vald3nir/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/build_daemon-2.1.8",
+      "rootUri": "file:///home/vald3nir/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/build_daemon-2.1.10",
       "packageUri": "lib/",
       "languageVersion": "2.11"
     },
@@ -75,7 +75,7 @@
     },
     {
       "name": "built_value",
-      "rootUri": "file:///home/vald3nir/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/built_value-8.0.0",
+      "rootUri": "file:///home/vald3nir/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/built_value-8.0.4",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -111,7 +111,7 @@
     },
     {
       "name": "code_builder",
-      "rootUri": "file:///home/vald3nir/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/code_builder-3.6.0",
+      "rootUri": "file:///home/vald3nir/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/code_builder-3.7.0",
       "packageUri": "lib/",
       "languageVersion": "2.7"
     },
@@ -183,7 +183,7 @@
     },
     {
       "name": "glob",
-      "rootUri": "file:///home/vald3nir/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/glob-2.0.0",
+      "rootUri": "file:///home/vald3nir/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/glob-2.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -219,13 +219,13 @@
     },
     {
       "name": "json_annotation",
-      "rootUri": "file:///home/vald3nir/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/json_annotation-4.0.0",
+      "rootUri": "file:///home/vald3nir/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/json_annotation-4.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "logging",
-      "rootUri": "file:///home/vald3nir/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/logging-1.0.0",
+      "rootUri": "file:///home/vald3nir/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/logging-1.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -273,7 +273,7 @@
     },
     {
       "name": "pedantic",
-      "rootUri": "file:///home/vald3nir/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/pedantic-1.10.0",
+      "rootUri": "file:///home/vald3nir/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/pedantic-1.11.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -297,7 +297,7 @@
     },
     {
       "name": "shelf",
-      "rootUri": "file:///home/vald3nir/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/shelf-1.0.0",
+      "rootUri": "file:///home/vald3nir/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/shelf-1.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -404,7 +404,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-03-06T17:06:53.202044Z",
+  "generated": "2021-03-28T21:48:55.972401Z",
   "generator": "pub",
   "generatorVersion": "2.13.0-77.0.dev"
 }
