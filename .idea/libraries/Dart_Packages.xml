@@ -457,6 +457,13 @@
             </list>
           </value>
         </entry>
+        <entry key="window_size">
+          <value>
+            <list>
+              <option value="$USER_HOME$/snap/flutter/common/flutter/.pub-cache/git/flutter-desktop-embedding-927f8cbc09b35d85245c095f2db8df9b186f6618/plugins/window_size/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="yaml">
           <value>
             <list>
@@ -467,6 +474,7 @@
       </option>
     </properties>
     <CLASSES>
+      <root url="file://$USER_HOME$/snap/flutter/common/flutter/.pub-cache/git/flutter-desktop-embedding-927f8cbc09b35d85245c095f2db8df9b186f6618/plugins/window_size/lib" />
       <root url="file://$USER_HOME$/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/_fe_analyzer_shared-14.0.0/lib" />
       <root url="file://$USER_HOME$/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/analyzer-0.41.2/lib" />
       <root url="file://$USER_HOME$/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/args-2.0.0/lib" />

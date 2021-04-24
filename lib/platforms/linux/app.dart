@@ -1,7 +1,7 @@
 import 'package:calculator/core/views/calculator_views.dart';
 import 'package:flutter/material.dart';
 
-class AndroidApp extends StatelessWidget {
+class LinuxApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -31,7 +31,7 @@ class MyHomePage extends StatelessWidget {
         child: SingleChildScrollView(
           child: Container(
             child: Column(
-              children: <Widget>[Visor(), KeyboardAndroid()],
+              children: <Widget>[Visor(), KeyboardIOS()],
             ),
           ),
         ),

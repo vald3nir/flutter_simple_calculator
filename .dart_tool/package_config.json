@@ -392,6 +392,12 @@
       "languageVersion": "2.10"
     },
     {
+      "name": "window_size",
+      "rootUri": "file:///home/vald3nir/snap/flutter/common/flutter/.pub-cache/git/flutter-desktop-embedding-927f8cbc09b35d85245c095f2db8df9b186f6618/plugins/window_size",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
       "name": "yaml",
       "rootUri": "file:///home/vald3nir/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/yaml-3.1.0",
       "packageUri": "lib/",
@@ -404,7 +410,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-03-28T21:48:55.972401Z",
+  "generated": "2021-04-24T21:44:20.941395Z",
   "generator": "pub",
   "generatorVersion": "2.13.0-77.0.dev"
 }
